@@ -2,27 +2,44 @@
 <html lang="en">
 <head>
 <style> 
-body{
-  background-color: #212629;
-  color: white;
-}
-
-div.a {
-  text-align: center;
-}
-
 header {
   background-color: #212629;
   text-align: left;
   color: white;
   font-size: 24px;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
+
 li {
-  display: inline;
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+body{
+  background-color: #212629;
+  color: white;
+}
+
+div.b {
+  text-align: center;
 }
 
 </style>
@@ -32,11 +49,11 @@ li {
 <body>
 <header>
 <ul>
-  <li> yo </li>
+  <li><a class="active" href="#home">Home</a></li>
 </ul>
 </header>
 
-<div class="a">
+<div class="b">
 <h1> ah ah ah jungle beat </h1>
 </div>
   
