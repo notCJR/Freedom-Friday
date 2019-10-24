@@ -1,17 +1,18 @@
 <!-- This is a comment, anything written in here will not display. So when the computer sees this code it is told not to run
-it and just leave it there -->
+it, just leave it there. -->
 
-<!-- This piece of code tells the computer that the program language it should be interpreting it is HTML5, it is the start 
-of every website and without it our website wouldn't run. It is also the only piece of code that does not have end tags -->
+<!-- This piece of code tells the computer that the program language it should be interpreting it is html, and it is the start 
+of every website. It is also the only piece of code that does not have end tags -->
 <!DOCTYPE html>
 
 <!-- This piece of code intializes the root element "html", it is tells the computer that everything below it is code.  
 It also has lang="en" next to it which determines the real world language of our website which is English. -->
 <html lang="en">
 
-<!-- This piece of code initializes the head element, everything below this is our code in the head -->  
+<!-- This piece of code initializes the <head> element, everything below this is our code in the head -->  
 <head>
-<!-- This code initializes style which tells how everything will be "styled" or presented on the web page when the code 
+
+<!-- This code initializes <style> which tells how everything will be "styled" or presented on the web page when the code 
 is called. Style is internal CSS. -->
 <style> 
 /* Since <style> is in CSS, commenting in the style will be with / and * because every programming langauge has different 
@@ -26,12 +27,12 @@ ul {
   background-color: #212629; /* Background color changes the background color of the list, which is our page color */
 }
 
-/* Everything between these brackets decide what li(inserting data into list) will look like */
+/* Everything between these brackets decide what <li>(inserting data into list) will look like */
 li {
   float: left; /* Float decides what side of the screen the text will be on */
 }
 
-/* Everything between these brackets decides what li(inserting data into list) will look like when specifically called */
+/* Everything between these brackets decides what <li>(inserting data into list) will look like when specifically called */
 li a {
   display: block; /* This determines the dimensions of the list, without it the buttons would be a skinny rectangle */
   color: white; /* Color changes the color of the text color in the list */
@@ -50,90 +51,94 @@ li a:hover {
   background-color: green; /* Changes color of button to green when it is the active page */
 }
   
-/* Everything between these brackets decide what the body will look like */
+/* Everything between these brackets decide what the <body> will look like */
 body{
   background-color: #212629; /* Changes background color of the body */
   color: white; /* Changes what color the text is */
 }
 
-div.c {
-  font-size: 20px; /* Decides the font size of the anything in object c */
-}
-
-/* Everything between these brackets decide what the content will look inside of it when called */
+/* Div declares a special section in the body, and this section is associated with class b */
 div.b {
   text-align: center; /* Alligns text to the center */
 }
 
+/* Creating div class c */
+div.c {
+  font-size: 20px; /* Decides the font size of the anything in class c */
+}
+
 /* This is how a piece of code ends in HTML5, there is a slash and the name of the code that we started. This code represents
-the end of the style */
+the end of the <style> */
 </style>
 
-<!-- This is the title of the website, it's what shows up in the tab of the page -->
+<!-- This is the <title> of the website, it's what shows up in the tab of the page -->
 <title> Freedom Friday Project </title>
 
-<!-- This is the end of head element -->
+<!-- This is the end of <head> element -->
 </head>
  
-<!-- This is the beginning of the body element, which is the content that shows up on our website -->
+<!-- This is the beginning of the <body> element, which is the content that shows up on our website -->
 <body>
 
 <!-- This is the start of an unordered list which is the buttons that help navigate our website -->
 <ul>
   <li><a class="active" href="index.html">Home</a></li> <!-- We insert things into our list with <li>, we then state that we 
-are using the "a selector" with class "active" which makes the button always green, href links the html file to it so when you click on it
-that's where you go, "Home" is the name of the button, then the code ends. -->
+are using the "a" selector with class "active" which makes the button green when you are on the page, href links the 
+html file to it so when you click on it that's where you go, and "Home" is the name of the button, then the code ends. -->
   
-  <li><a href="about.html">About</a></li> <!-- First we state we are using the "a selector" with our code, then we link the html file to 
-about.html so when we click on it it goes to the page, we name the button about, then it ends. -->
+  <li><a href="about.html">About</a></li> <!-- First we state we are using the "a" selector with our code, then we link the 
+html file to about.html so when we click on it it goes to the page, we name the button "about", then it ends. -->
   
-  <li><a href="contact.html">Contact</a></li> <!-- a selector, link the html file, call the button contact, end -->
+  <li><a href="contact.html">Contact</a></li> <!-- "a" selector, link the html file, call the button "contact", end -->
 </ul>
 <!-- end list -->
   
-<!-- This starts "class b", that means everything in it will be affected by the things we set in the style -->
+<!-- This starts class "b" in <div>, that means everything in it will be affected by the things we set in the <style> -->
 <div class="b">
   <h1> Freedom Friday </h1> <!-- h1 is the first heading which means the text will be very large -->
 </div>
-<!-- end "class b" -->
+<!-- end class "b" and <div> -->
 
 <!-- <p> is the code for basic text on the page, it's like the content of an essay -->
-<p>This website serves as a homepage for our Freedom Friday project.</p>
+<p> This website serves as a homepage for our Freedom Friday project.  </p>
 
 <!-- A <p> with nothing in it means a space in the page, equivalent of pressing "enter" on google docs -->
 <p> </p>
 
-<!-- Everything in <substitle> will be affected by the things we set in style -->
+<!-- This starts class "c" in div, so everything is affected by what was set in <style> -->
 <div class="c">
-  <p> What is Freedom Friaday?</p>
+  <p> What is Freedom Friaday?</p> 
 </div>
  
 <!-- More text -->
 <p> Freedom Friday was inspired by google. It allows students to create a product while exploring something that they are passionate about.</p>
 
-<!-- anything in between this will be oriented to the centered -->
+<!-- starting class "b", anything in between this will be oriented to the centered -->
 <div class ="b">
 
 <!-- This is the code for a button to link to the W3C HTML5 certification website, while it may seem like it's a button 
 this is actually an image made to look like a button. The W3C HTML5/CSS certification is open source software that is used
 on a website to check the markup validity. -->
 
-<!-- What a href does is forward you to the link when you click on it -->
+
   <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fnotcjr.github.io%2FFreedom-Friday%2Findex.html"> 
     <img style="border:0;width:88px;height:31px" 
     src="valid.png"
     alt="Valid HTML5!" />
   </a>
 <!--
+What a href does is forward you to the link when you click on it
 img style sets the size of the image and border makes it so there's a small space in between the buttons(images)
 src links to the image file and in our git repo and displays it on the page
 alt sets the "name" of the image
 -->
+  
   <a href="https://jigsaw.w3.org/css-validator/check/referer">
     <img style="border:0;width:88px;height:31px"
     src="https://jigsaw.w3.org/css-validator/images/vcss"
     alt="Valid CSS!" />
   </a>
+
 </div>
 
 <!-- This is the end of the body element -->
