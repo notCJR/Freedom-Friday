@@ -1,85 +1,119 @@
+<!-- Starting the code -->
 <!DOCTYPE html>
+<!-- setting html element and english language -->
 <html lang="en">
-<head>
-<link rel="shortcut icon" href="favicon.ico"/>
-<style> 
-ul { 
-  list-style-type: none; 
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #212629;
-}
-li {
-  float: left;
-}
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-li a:hover {
-  text-decoration: underline;
-}
-.active {
-  background-color: green;
-}
-body{
-  background-color: #212629;
-  color: white;
-}
-div.b {
-  text-align: center;
-}
-</style>
+  <!-- starting the head element -->
+  <head>
+    <!-- setting the favicon to the Arlington Tech logo -->
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <!-- setting style element -->
+    <style>
+      /* Below decides what unordered list will look like */
+      ul { 
+        list-style-type: none; /* Removes the dot in the list */
+        margin: 0; /* as far up as it can be on the page */ 
+        padding: 0; /* makes it so the list has spacing and to the left */
+        overflow: hidden; /* makes it fit in an area that is too small */
+        background-color: #212629; /* Changes background color of the list to page color */
+      }
+      /* Everything below decides what list insert will look like */
+      li {
+        float: left; /* Decides what side of the screen the text will be on */
+      }
+      /* Decides what li will look like when using selector a */
+      li a {
+        display: block; /* determines dimensions of the buttons */
+        color: white; /* changes text color to white */
+        text-align: center; /* alligns text in the center of the button */
+        padding: 14px 16px; /* determines the spacing between the buttons */
+        text-decoration: none; /* makes so text is normal */
+      }
+      /* Decides what li will look like when using selector a and class hover */
+      li a:hover {
+        text-decoration: underline; /* underlines the text of the button when hovered over */
+      }
+      /* Makes class active */
+      .active {
+        background-color: green; /*changes backgrouund color to green when on that page */
+      }
+      /* Decides what the page and body will look like */
+      body{
+        background-color: #212629; /* changes page background to black */
+        color: white; /* changes text color to white */
+      }
+      /* Makes class b inside of div */
+      div.b {
+        text-align: center; /* alligns text to the center */
+      }
+    /* ending style */
+    </style>
+    <!-- creating the title of the page -->
+    <title> Freedom Friday Project </title>
+  <!-- ending the head -->
+  </head>
+  <!-- starting the body -->
+  <body>
+    <!-- starting an unordered list -->
+    <ul>
+      <li><a href="index.html">Home</a></li> <!-- adding home button -->
+      <li><a class="active" href="about.html">About</a></li> <!-- adding active about button -->
+      <li><a href="contact.html">Contact</a></li> <!-- adding contact button -->
+    </ul>
+    <!-- ending list -->
+    <!-- starting div element in class b -->
+    <div class="b">
+      <h1> Freedom Friday: About </h1> <!-- header text -->
+    </div>
+    
+    <!-- just some text -->
+    <p> This website is a homepage for our Freedom Friday project, below is info about us. </p>
+    
+    <!-- text with the second largest heading size -->
+    <h2> Christopher Ryan </h2>
+    <!-- declaring image file, image name, and setting its size -->
+    <img src="IMG_1716.jpg" alt="Christopher Ryan" width="333" height="333"> 
+    <!-- just some text -->
+    <p> Christopher Ryan is currently learning languages such as Python and HTML and spends free time using the computer, 
+    playing sports, and doing schoolwork. </p>
 
-<title> Freedom Friday Project </title>
-</head>
-<body>
-  
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a class="active" href="about.html">About</a></li>
-  <li><a href="contact.html">Contact</a></li>
-</ul>
+    <!-- heading text -->
+    <h2> Jakob Ayers </h2>
+    <!-- image file, image name, since the image file has the size we want we don't change it -->
+    <img src="IMG_20191018_095508553.jpg" alt="Jakob Ayers">
+    <!-- more text -->
+    <p> Jakob Ayers is a computer hardware enthusiast who spends his free time tinkering with his computer and playing minecraft.</p>
 
-<div class="b">
-<h1> Freedom Friday: About </h1>
-</div>
-
-<p> This website is a homepage for our Freedom Friday project, below is info about us. </p>
-  
-<h2> Christopher Ryan </h2>
-<img src="IMG_1716.jpg" alt="Christopher Ryan" width="333" height="333"> 
-<p> Christopher Ryan is currently learning languages such as Python and HTML and spends free time using the computer, 
- playing sports, and doing schoolwork. </p>
-
-  
-<h2> Jakob Ayers </h2>
-<img src="IMG_20191018_095508553.jpg" alt="Jakob Ayers">
-<p> Jakob Ayers is a computer hardware enthusiast who spends his free time tinkering with his computer and playing minecraft.</p>
-
-<h2> Shaw Nueman </h2>  
-<img src="IMG_1715.jpg" alt="Shaw Nueman" width="500" height="333">
-<p> From Shaw: "some guy they found of the street and forced to help." </p>
-
-<div class ="b">
-  <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fnotcjr.github.io%2FFreedom-Friday%2Fabout.html"
-    target="_blank">
-    <img style="border:0;width:88px;height:31px"
-    src="valid.png"
-    alt="Valid HTML5!" />
-  </a>
-
-  <a href="https://jigsaw.w3.org/css-validator/check/referer"
-    target="_blank">
-    <img style="border:0;width:88px;height:31px"
-    src="https://jigsaw.w3.org/css-validator/images/vcss"
-    alt="Valid CSS!" />
-  </a>
-</div>  
-
-</body>
+    <!-- heading text -->
+    <h2> Shaw Nueman </h2>
+    <!-- image file, image name, set size -->
+    <img src="IMG_1715.jpg" alt="Shaw Nueman" width="500" height="333">
+    <!-- even more text -->
+    <p> From Shaw: "some guy they found of the street and forced to help." </p>
+    
+    <!-- starting div element in class b -->
+    <div class ="b">
+      <!-- selector a and link to the site when clicked on -->
+      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fnotcjr.github.io%2FFreedom-Friday%2Fabout.html"
+        target="_blank"> <!-- opens up a new tab when cliked on -->
+        <!-- sets the sizing and borders of the image, declaring image file, and image name -->
+        <img style="border:0;width:88px;height:31px"
+        src="valid.png"
+        alt="Valid HTML5!" />
+      <!-- ending a selector -->  
+      </a>
+      
+      <!-- selector a and link -->
+      <a href="https://jigsaw.w3.org/css-validator/check/referer"
+        target="_blank"> <!-- new tab -->
+        <!-- sizing, image file, image name -->
+        <img style="border:0;width:88px;height:31px"
+        src="https://jigsaw.w3.org/css-validator/images/vcss"
+        alt="Valid CSS!" />
+      <!-- end a selector -->  
+      </a>
+    <!-- end div -->
+    </div>  
+  <!-- end body -->
+  </body>
+<!-- end html -->
 </html>
