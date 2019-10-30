@@ -69,24 +69,28 @@ div.b {
 div.c {
   font-size: 20px; /* Decides the font size of anything in class c */
 }
+	
+/* Creating div class dload */
+div.dload {
+  text-align:center; /* text is centered */
+  }
 
-div.dload{
-  text-align:center;
-  }
-  div.dload a{
+div.dload a { /* Creating class a in dload class */
   display: block;
-  color: white;
-  text-decoration: none;
-  }
-  div.dload:hover{
-    text-decoration: underline;  
-    background-color: green;
-    }
+  color: white; /* Text color is white */
+  text-decoration: none; /* text is normal */
+}
   
+div.dload:hover { /* Creating hover class in dload class */ 
+	text-decoration: underline; /*when you hover over text is underlined */
+  background-color: green; /*when you hover over text is green */
+}
+
+/* Creating div class e */
 div.e {
-	position:fixed;
-  bottom:0px;
-  left:45%;
+	position:fixed; /* makes it so image is fixed regardless of where you are on the page */
+  bottom:0px; /* sets it to the bottom of the page always */
+  left:45%; /* sets it to the middle of the page considering we are using 2 images */
 }
 
 /* This is how a piece of code ends in HTML5, there is a slash and the name of the code that we started. This code represents
@@ -120,9 +124,12 @@ are using the "a" selector with class "active" which makes the button green when
   <h1> Freedom Friday </h1> <!-- h1 is the first heading which means the text will be very large -->
 </div>
 <!-- end class "b" and <div> -->
+
+<!-- Starting class "dload" in <div>, everything affected by <style> -->
 <div class=dload>
-  <a href="bot.zip" download>Downlaod</a>
-  </div>
+  <a href="bot.zip" download>Download</a> <!-- when you click on the button you download bot.zip -->
+</div>
+
 <!-- <p> is the code for basic text on the page, it's like the content of an essay -->
 <p> This website serves as a homepage for our Freedom Friday project.  </p>
 
