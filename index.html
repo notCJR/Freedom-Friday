@@ -70,8 +70,6 @@ div.c {
   font-size: 20px; /* Decides the font size of anything in class c */
 }
 
-/* This is how a piece of code ends in HTML5, there is a slash and the name of the code that we started. This code represents
-the end of the <style> */
 div.dload{
   text-align:center;
   }
@@ -84,6 +82,15 @@ div.dload{
     text-decoration: underline;  
     background-color: green;
     }
+  
+div.e {
+	position:fixed;
+  bottom:0px;
+  left:45%;
+}
+
+/* This is how a piece of code ends in HTML5, there is a slash and the name of the code that we started. This code represents
+the end of the <style> */
 </style>
 
 <!-- This is the <title> of the website, it's what shows up in the tab of the page -->
@@ -130,13 +137,12 @@ are using the "a" selector with class "active" which makes the button green when
 <!-- More text -->
 <p> Freedom Friday was inspired by google. It allows students to create a product while exploring something that they are passionate about.</p>
 
-<!-- starting class "b", anything in between this will be oriented to the centered -->
-<div class ="b">
+<!-- starting class "b", anything in between this will be oriented to the center and bottom of the page -->
+<div class ="e">
 
 <!-- This is the code for a button to link to the W3C HTML5 certification website, while it may seem like it's a button 
 this is actually an image made to look like a button. The W3C HTML5/CSS certification is open source software that is used
 on a website to check the markup validity. -->
-
 
   <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fnotcjr.github.io%2FFreedom-Friday%2Findex.html"
     target="_blank"> 
@@ -158,7 +164,6 @@ alt sets the "name" of the image
     src="https://jigsaw.w3.org/css-validator/images/vcss"
     alt="Valid CSS!" />
   </a>
-
 </div>
 
 <!-- This is the end of the body element -->
