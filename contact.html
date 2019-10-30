@@ -1,93 +1,118 @@
+<!-- Starting the code -->
 <!DOCTYPE html>
+<!-- setting html element and english language -->
 <html lang="en">
-<head>
-<link rel="shortcut icon" href="favicon.ico"/>
-<style> 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #212629;
-}
-	
-li {
-  float: left;
-}
-	
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-	
-li a:hover {
-  text-decoration: underline;
-}
-	
-.active {
-  background-color: green;
-}
-	
-body{
-  background-color: #212629;
-  color: white;
-}
+  <!-- starting the head element -->
+  <head>
+    <!-- setting the favicon to the Arlington Tech logo -->
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <!-- setting style element -->
+    <style>
+      /* Below decides what unordered list will look like */
+      ul { 
+        list-style-type: none; /* Removes the dot in the list */
+        margin: 0; /* as far up as it can be on the page */ 
+        padding: 0; /* makes it so the list has spacing and to the left */
+        overflow: hidden; /* makes it fit in an area that is too small */
+        background-color: #212629; /* Changes background color of the list to page color */
+      }
+      /* Everything below decides what list insert will look like */
+      li {
+        float: left; /* Decides what side of the screen the text will be on */
+      }
+      /* Decides what li will look like when using selector a */
+      li a {
+        display: block; /* determines dimensions of the buttons */
+        color: white; /* changes text color to white */
+        text-align: center; /* alligns text in the center of the button */
+        padding: 14px 16px; /* determines the spacing between the buttons */
+        text-decoration: none; /* makes so text is normal */
+      }
+      /* Decides what li will look like when using selector a and class hover */
+      li a:hover {
+        text-decoration: underline; /* underlines the text of the button when hovered over */
+      }
+      /* Makes class active */
+      .active {
+        background-color: green; /*changes backgrouund color to green when on that page */
+      }
+      /* Decides what the page and body will look like */
+      body{
+        background-color: #212629; /* changes page background to black */
+        color: white; /* changes text color to white */
+      }
+      /* Makes class b inside of div */
+      div.b {
+        text-align: center; /* alligns text to the center */
+      }
+      /* Creating div class c */
+      div.c {
+	      position:fixed; /* makes it so image is fixed regardless of where you are on the page */
+        bottom:0px; /* sets to bottom of page */ 
+        left:45%; /* sets to middle of page */
+      }	
+    /* ending style */
+    </style>
+    <!-- creating the title of the page -->
+    <title> Freedom Friday Project </title>
+  <!-- ending the head -->
+  </head>
+  <!-- starting the body -->
+  <body>
+    <!-- starting an unordered list -->
+    <ul>
+      <li><a href="index.html">Home</a></li> <!-- home button -->
+      <li><a class="active" href="about.html">About</a></li> <!-- about button -->
+      <li><a href="contact.html">Contact</a></li> <!-- active contact button -->
+    </ul>
+    <!-- ending list -->
+    <!-- starting div element in class b -->
+    <div class="b">
+      <h1> Freedom Friday: Contact Us </h1> <!-- header text -->
+    </div>
+    
+    <!-- header text -->
+    <h2> Questions? Suggestions? email us anything at our emails below </h2>
+    
+    <!-- just text -->
+    <p> Christopher Ryan: </p>
+    <!-- makes the text a link to sending an email -->
+    <p> <a href="mailto:cjryan0312@gmail.com">cjryan0312@gmail.com</a></p>
+    
+    <!-- text -->
+    <p> Jakob Ayers </p>
+    <!-- text link and email link -->
+    <p> <a href="jakobaayers@gmail.com">jakobaayers@gmail.com</a></p>
+    
+    <!-- text -->
+    <p> Shaw Nueman </p>
+    <!-- text link and email -->
+    <p> <a href="thepolarbearthatstoleyourmoney@gmail.com">thepolarbearthatstoleyourmoney@gmail.com</a></p>	
 
-div.b {
-  text-align: center;
-}
-
-div.c {
-	position:fixed;
-  bottom:0px;
-  left:45%;
-}
-	
-</style>
-
-<title> Freedom Friday Project </title>
-</head>
-<body>
-	
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a class="active" href="contact.html">Contact</a></li>
-</ul>
-	
-<div class="b">
-<h1> Freedom Friday: Contact Us </h1>
-</div>
-
-<h2> Questions? Suggestions? email us anything at our emails below </h2>
-  
-<p> Christopher Ryan: </p>
-<p> <a href="mailto:cjryan0312@gmail.com">cjryan0312@gmail.com</a></p>
-
-<p> Jakob Ayers </p>
-<p> <a href="jakobaayers@gmail.com">jakobaayers@gmail.com</a></p>
-
-<p> Shaw Nueman </p>
-<p> <a href="thepolarbearthatstoleyourmoney@gmail.com">thepolarbearthatstoleyourmoney@gmail.com</a></p>	
-
-<div class ="c">
-  <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fnotcjr.github.io%2FFreedom-Friday%2Fcontact.html"
-     target="_blank">
-    <img style="border:0;width:88px;height:31px"
-    src="valid.png"
-    alt="Valid HTML5!" />
-  </a>
-
-  <a href="https://jigsaw.w3.org/css-validator/check/referer"
-     target="_blank"> 
-    <img style="border:0;width:88px;height:31px"
-    src="https://jigsaw.w3.org/css-validator/images/vcss"
-    alt="Valid CSS!" />
-  </a>
-</div>
- 
-</body>
+    <!-- starting div element and class c -->
+    <div class ="c">
+      <!-- selector a and link to site -->
+      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fnotcjr.github.io%2FFreedom-Friday%2Fcontact.html"
+      target="_blank"> <!-- opens up a new tab when clicked on -->
+      <!-- sets the sizing and borders of the image, declaring image file, and image name -->
+      <img style="border:0;width:88px;height:31px"
+      src="valid.png"
+      alt="Valid HTML5!" />
+      <!-- ending a selector -->  
+      </a>
+      
+      <!-- selector a and link -->
+      <a href="https://jigsaw.w3.org/css-validator/check/referer"
+        target="_blank"> <!-- new tab -->
+        <!-- sizing, image file, image name -->
+        <img style="border:0;width:88px;height:31px"
+        src="https://jigsaw.w3.org/css-validator/images/vcss"
+        alt="Valid CSS!" />
+      <!-- end a selector -->  
+      </a>
+    <!-- end div -->
+    </div> 
+  <!-- end body -->
+  </body>
+<!-- end html -->
 </html>
